@@ -1,12 +1,11 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color:rgb(204, 204, 204);
+    background-color:lightgray;
 }
 h1 {
     color: black;
     background-color: cornflowerblue;
-    border: 2px; solid purple;
     border-radius: 5px;
     margin-left: 10%;
     margin-right: 10%;
@@ -18,12 +17,7 @@ h1 {
     flex-direction: column;
 }
 
-.page {
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    display: flex;
-    flex-direction: column;
-}
+
 
 .navigation {
     text-align: center;
@@ -36,15 +30,38 @@ h1 {
     ;
 }
 
-h2 {
+h2, h3, h4 {
     font-family: 'Franklin Gothic Medium', sans-serif;
+    border-bottom: 10px solid lightgrey;
+    border-top-left-radius: 20px;
+    background-color: blueviolet;
+    margin-bottom: auto;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-top: 5px;
+
 }
 
 .experience {
     display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
     flex-direction: row;
+    background-color: grey;
 }
 
 .job {
-    flex-direction: row
+    flex-direction: row;
+    max-width: 600px;
+}
+
+.textBox {
+    background-color: cadetblue;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0px;
+    border-bottom-right-radius: 20px;
+    padding-top: 0px;
+    margin-top: -18px;
+   
 }
