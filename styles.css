@@ -23,11 +23,14 @@ h1 {
     text-align: center;
     background-color: cadetblue;
     border-radius: 5px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 30%;
+    margin-right: 30%;
     padding: 3px;
+    padding-left: 40px;
+    padding-right: 40px;
     font-family: 'Franklin Gothic Medium', sans-serif;
-    ;
+    display: flex;
+    justify-content: space-around;
 }
 
 h2, h3, h4 {
@@ -89,4 +92,8 @@ h2, h3, h4 {
 .picture {
     max-width: 50%;
     max-height: auto;
+}
+
+.navButton {
+    height: 50px;
 }
