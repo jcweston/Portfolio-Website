@@ -32,9 +32,9 @@ h1 {
 
 h2, h3, h4 {
     font-family: 'Franklin Gothic Medium', sans-serif;
-    border-bottom: 10px solid lightgrey;
+    border-bottom: 7px solid lightgrey;
     border-top-left-radius: 20px;
-    background-color: blueviolet;
+    background-color: cadetblue;
     margin-bottom: auto;
     padding-bottom: 5px;
     padding-left: 10px;
@@ -42,27 +42,51 @@ h2, h3, h4 {
 
 }
 
-.experience {
+.outerBox {
     display: flex;
     align-items: stretch;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
-    background-color: grey;
+    justify-content: space-between;
+    background-color: lightblue;
+    border-bottom-right-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.job {
+.innerBox {
     flex-direction: row;
-    max-width: 600px;
+    width:45%;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-grow: 1;
 }
 
 .textBox {
-    background-color: cadetblue;
+    background-color: lightblue;
     padding-left: 10px;
     padding-right: 10px;
     margin: 0px;
     border-bottom-right-radius: 20px;
     padding-top: 0px;
     margin-top: -18px;
-   
+}
+
+.insideTextBox {
+    background-color: rgb(98, 194, 226);
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0px;
+    border-bottom-right-radius: 20px;
+    padding-top: 0px;
+    margin-top: -18px;
+}
+
+.insideHeading {
+    border-bottom: 7px solid lightblue;
+}
+
+.picture {
+    max-width: 50%;
+    max-height: auto;
 }
