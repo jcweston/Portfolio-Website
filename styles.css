@@ -2,32 +2,31 @@ body {
     display: flex;
     flex-direction: column;
     background-color:lightgray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.topBar {
+    background-color: lightseagreen;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius:5px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
 h1 {
-    color: black;
-    background-color: cornflowerblue;
-    border-radius: 5px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 5px;
-    font-family: 'Franklin Gothic Medium', sans-serif;
-    text-align: center;
-    flex-direction: column;
+    padding-left: 10px;
+    margin: 0:
 }
-
-
 
 .navigation {
     text-align: center;
-    background-color: cadetblue;
     border-radius: 5px;
-    margin-left: 30%;
-    margin-right: 30%;
+    width: 200px;
+    margin-left: 5%;
+    margin-right: 5%;
     padding: 3px;
-    padding-left: 40px;
-    padding-right: 40px;
     font-family: 'Franklin Gothic Medium', sans-serif;
     display: flex;
     justify-content: space-around;
@@ -36,6 +35,7 @@ h1 {
 h2, h3, h4 {
     font-family: 'Franklin Gothic Medium', sans-serif;
     border-bottom: 7px solid lightgrey;
+    border-radius:2px;
     border-top-left-radius: 20px;
     background-color: cadetblue;
     margin-bottom: auto;
@@ -52,9 +52,9 @@ h2, h3, h4 {
     flex-direction: row;
     justify-content: space-between;
     background-color: lightblue;
+    border-radius:2px;
     border-bottom-right-radius: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
 }
 
 .innerBox {
@@ -70,8 +70,9 @@ h2, h3, h4 {
     padding-left: 10px;
     padding-right: 10px;
     margin: 0px;
+    border-radius:2px;
     border-bottom-right-radius: 20px;
-    padding-top: 0px;
+    padding-top: 2px;
     margin-top: -18px;
 }
 
@@ -80,8 +81,10 @@ h2, h3, h4 {
     padding-left: 10px;
     padding-right: 10px;
     margin: 0px;
+    border-radius:2px;
     border-bottom-right-radius: 20px;
     padding-top: 0px;
+    padding-bottom: 1px;
     margin-top: -18px;
 }
 
@@ -92,8 +95,12 @@ h2, h3, h4 {
 .picture {
     max-width: 50%;
     max-height: auto;
+    border-radius:2px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
 }
 
 .navButton {
-    height: 50px;
+    height: 30px;
 }
