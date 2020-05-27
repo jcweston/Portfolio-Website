@@ -1,0 +1,29 @@
+.normal {
+    text-decoration: none;
+    margin: 2.5px;
+}
+
+.to-do-list {
+    width: 40%;
+}
+
+.list {
+    background-color: paleturquoise;
+}
+
+.strike{
+    text-decoration: line-through;
+    margin: 2.5px;
+}
+
+.strike::after{
+    content: "✓";
+    padding-left: 5px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.list {
+    display:flex;
+    flex-direction: column;
+}

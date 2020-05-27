@@ -1,9 +1,11 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>
             James Weston
         </title>
         <link href="styles.css" rel="stylesheet">
+        <script src="scripts.js" defer></script> 
     </head>
     <body>
         <div class="topBar">
@@ -23,67 +25,153 @@
                     </span></a>
             </div>
         </div>
-    <div class="sidebar-flex-container">
-        <div class="sidebar">
-            <div class="stats-box">
-                <div class="stats-heading">
-                    <h2 class="sidebar-title">About</h2>
-                    <div class="cutout-box" id="about-cutout" >
-                        <h3 class="cutout-header">About</h3>
-                        <div class="outerBox">
-                            Placeholder 'about' text
-                                
-                        </div>
-                    </div>
+
+        <div class="main-page">
+            <div class="sidebar">
+                <br>
+                <div id="about-button" class="sidebar-button , sidebar-button-clicked">
+                    <h3>About</h3>
                 </div>
-                <div class="stats-nav" id="html-stats">
-                    <h3>Summary</h3>
-                    <div class="cutout-box" >
-                        <h3 class="cutout-header">Summary</h3>
-                        <div class="outerBox">
-                            
-                                <p>
-                                    I am a recently-trained web developer with extensive previous experience working in the chemical industry.
-                                </p>
-                                <p>
-                                    I am excited to have to changed career from chemistry to web design, applying skills I have learned through a 10-year career in science to my new projects.
-                                </p>
-                                <p>
-                                    As well as web design, I also work part-time designing board games, roleplaying systems, and resources for games masters to use to improve their own games.
-                                </p>
-                        </div>
-                    </div>
-            
+                <br>
+                <div id="projects-button" class="sidebar-button">
+                    <h3>Projects</h3>
                 </div>
-                <div class="stats-nav" id="css-stats">
-                        <h3 id="css-button">Contact</h3>
-                        <div class="cutout-box" >
-                            <h3 class="cutout-header">Contact</h3>
-                            <div class="outerBox">
-                                    <p>
-                                       Email: j.c.weston@outlook.com
-                                    <br>
-                                        Tel no.: 07515008066
-                                    </p>
+                <br>
+                <div id="contact-button" class="sidebar-button">
+                    <h3>Contact</h3>
+                </div>
+                <br>
+                <div id="studies-button" class="sidebar-button">
+                    <h3>Studies</h3>
+                </div>
+                <br>
+                <div id="pictures-button" class="sidebar-button">
+                    <h3>Pictures</h3>
+                </div>
+                <br>
+            </div>
+            <div class='main'>
+                <div id="about-box" class="visible , box">
+                    <h2>About</h2>
+                    <div class = "textbox">
+                        <p>
+                            I am a recently-trained web developer with extensive previous experience working in the chemical industry.
+                        </p>
+                        <p>
+                            I am excited to have to changed career from chemistry to web design, applying skills I have learned through a 10-year career in science to my new projects.
+                        </p>
+                        <p>
+                            As well as web design, I also work part-time designing board games, roleplaying systems, and resources for games masters to use to improve their own games.
+                        </p>
+                    </div>
+
+                </div>
+                <div id="projects-box" class="visible , box">
+                    <h2>Projects</h2>
+                    <div class = "textbox">
+                        <div class = "project-row">
+                            <div class="project-title-container">
+                                <h4 class="project-title">To-Do List</h4>
+                                <div class = "project-link-row">
+                                    <a href="To-Do-List App/To-Do List.html">
+                                        App
+                                    </a>
+                                    <a href="experience.html">
+                                        Github   
+                                    </a>
+                                </div>
                             </div>
-                        </div>      
-                </div>
-            
-                <div class="stats-nav" id="js-stats">
-                    <h3 id="js-button">Pictures</h3>
-                    <div class="cutout-box" >
-                        <h3 class="cutout-header">Pictures</h3>
-                        <div class="outerBox">
-                            <img class="picture" src="./Images/James Wedding.JPG" alt="picture of James">
+                            <div class="project-text-container">
+                                <p>Simple list app with session storage and task sorting features. this sentence continues in more detal now.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "textbox">
+                        <div class = "project-row">
+                            <div class="project-title-container">
+                                <h4 class="project-title">Blackjack Game</h4>
+                                <div class = "project-link-row">
+                                    <a href="Blackjack/Blackjack.html">
+                                        App
+                                    </a>
+                                    <a href="experience.html">
+                                        Github   
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-text-container">
+                                <p>Game of blackjack played in-browser. Work in progress.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div id="contact-box" class="hidden , box">
+                    <h2>Contact</h2>
+                    <div class = "textbox">
+                        <p>
+                            Email: j.c.weston@outlook.com
+                         <br>
+                             Tel no.: 07515008066
+                         </p>
+                    </div>
+                </div>
+                <div id="studies-box" class="hidden , box">
+                    <h2>Studies</h2>
+                    <div class = "textbox">
+                        <p>I am currently studying to improve my coding abilities, using a combination of practical projects (including this website) and online resources (such as FreeCodeCamp and Pluralsight).</p>
+                        <p>See below for an up-to-date track of my progress, as well as my medium- and long-term targets.</p>
+                        <div class="progress-box">
+                            <h4>Javascript</h4>
+                            <div class="slider-box" id="JS-slider-box">
+                                <div class="slider" id="JS-slider">
+                                    <h4 id = "JS-progress" class="slider-text">70%</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-box">
+                            <h4>HTML</h4>
+                            <div class="slider-box" id="HTML-slider-box">
+                                <div class="slider" id="HTML-slider">
+                                    <h4 id = "HTML-progress" class="slider-text">100%</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-box">
+                            <h4>CSS</h4>
+                            <div class="slider-box" id="CSS-slider-box">
+                                <div class="slider" id="CSS-slider">
+                                    <h4 id = "CSS-progress" class="slider-text">90%</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="pictures-box" class="hidden , box">
+                    <h2>Pictures</h2>
+                    <div id = "pictures-textbox" class = "textbox">
+                        <img class="picture" src="./Images/James Wedding.JPG" alt="picture of James">
+                    </div>
+                </div>
+
+
+
+
+            </div>
         </div>
-        <div class="sidebar">
-            <div class="stats-box">
-                <div class="stats-heading">
-                    <h2 class="sidebar-title">Web Development Progress</h2>
+
+
+
+
+
+
+
+
+
+
+   <!-- 
+                            <
                 </div>
                 <div class="stats-nav" id="html-stats">
                     <h3 id="html-button">HTML</h3>
@@ -145,7 +233,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
         <!-- <div class="page">
            
