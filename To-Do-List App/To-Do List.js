@@ -123,5 +123,5 @@ sort.addEventListener('click', ()=>{
 })
 
 clearButton.addEventListener('click',()=>{
-    sessionStorage.clear()
+    localStorage.clear()
 })
