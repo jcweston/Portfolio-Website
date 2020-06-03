@@ -7,52 +7,54 @@
         <link href="styles.css" rel="stylesheet">
         <script src="scripts.js" defer></script> 
     </head>
-    <body>
-        <div class="topBar">
-            <a class="name" href="index.html"><h1>James Weston</h1></a>
-            <!-- <div class="navigation">
-                <a href="index.html" class="button"><img src="./Images/book-open-solid.svg" class="icon">
-                <span class="buttonText">
-                    About
-                </span></a>
-                <a href="experience.html" class="button"><img src="./Images/laptop-code-solid.svg" class="icon">
-                    <span class="buttonText">
-                        Experience
-                    </span></a>
-                <a href="contact.html" class="button"><img src="./Images/address-card-solid.svg" class="icon">
-                    <span class="buttonText">
-                        Contact
-                    </span></a>
-            </div> -->
+    <body class="backgroundColour">
+        <div class="topBar , topbarColour">
+            <h1>James Weston</h1>
+            <div class="outside-links">
+                <a href="https://www.facebook.com/james.c.weston" class="button">
+                    <img src="./Images/facebook-f-brands.svg" class="icon">
+                </a>
+                <a href="https://www.linkedin.com/in/james-weston-00709593" class="button">
+                    <img src="./Images/linkedin-in-brands.svg" class="icon">
+                </a>
+                <!-- <a href="contact.html" class="button">
+                    <img src="./Images/address-card-solid.svg" class="icon">
+                </a> -->
+            </div>
         </div>
 
         <div class="main-page">
-            <div class="sidebar">
+            <div class="sidebar , sidebarColour">
                 <br>
                 <div id="about-button" class="sidebar-button , sidebar-button-clicked">
-                    <h3>About</h3>
+                    <h3 class="headerColour">About</h3>
                 </div>
                 <br>
                 <div id="projects-button" class="sidebar-button">
-                    <h3>Projects</h3>
+                    <h3 class="headerColour">Projects</h3>
                 </div>
                 <br>
                 <div id="contact-button" class="sidebar-button">
-                    <h3>Contact</h3>
+                    <h3 class="headerColour">Contact</h3>
                 </div>
                 <br>
                 <div id="studies-button" class="sidebar-button">
-                    <h3>Studies</h3>
+                    <h3 class="headerColour">Studies</h3>
                 </div>
                 <br>
                 <div id="pictures-button" class="sidebar-button">
-                    <h3>Pictures</h3>
+                    <h3 class="headerColour">Pictures</h3>
                 </div>
                 <br>
+                <div id="attributions-button" class="sidebar-button">
+                    <h3 class="headerColour">Attributions</h3>
+                </div>
+                <br>
+
             </div>
             <div class='main'>
-                <div id="about-box" class="visible , box">
-                    <h2>About</h2>
+                <div id="about-box" class="visible , box , boxColour">
+                    <h2 class="headerColour">About</h2>
                     <div class = "textbox">
                         <p>Trainee web developer.</p>
                         <p>Career changer with a highly technical background in the chemical industry. </p>
@@ -61,7 +63,7 @@
 
                 </div>
                 <div id="projects-box" class="hidden , box">
-                    <h2>Projects</h2>
+                    <h2 class="headerColour">Projects</h2>
                     <div class = "textbox">
                         <div class = "project-row">
                             <div class="project-title-container">
@@ -99,8 +101,8 @@
                         </div>
                     </div>
                 </div>
-                <div id="contact-box" class="hidden , box">
-                    <h2>Contact</h2>
+                <div id="contact-box" class="hidden , box , boxColour">
+                    <h2 class="headerColour">Contact</h2>
                     <div class = "textbox">
                         <p>
                             Email: j.c.weston@outlook.com
@@ -109,8 +111,8 @@
                         </p>
                     </div>
                 </div>
-                <div id="studies-box" class="hidden , box">
-                    <h2>Studies</h2>
+                <div id="studies-box" class="hidden , box , boxColour">
+                    <h2 class="headerColour">Studies</h2>
                     <div class = "textbox">
                         <p>I am currently studying to improve my coding abilities, using a combination of practical projects (including this website) and online resources (such as FreeCodeCamp and Pluralsight).</p>
                         <p>See below for an up-to-date track of my progress, as well as my medium- and long-term targets.</p>
@@ -143,125 +145,26 @@
                     </div>
                 </div>
                 <div id="pictures-box" class="hidden , box">
-                    <h2>Pictures</h2>
+                    <h2 class="headerColour">Pictures</h2>
                     <div id = "pictures-textbox" class = "textbox">
                         <img class="picture" src="./Images/James Wedding.JPG" alt="picture of James">
                     </div>
                 </div>
+                <div id="attributions-box" class="hidden , box">
+                    <h2 class="headerColour">Attributions</h2>
+                    <div id = "attributions-textbox" class = "textbox">
+                        <p>Icons downloaded from <a href="//fontawesome.com/license">fontawesome</a></p>
+                        <br>
+                        <p>Website design James Weston 2020</p>
+                    </div>
+                </div>
             </div>
 
 
 
 
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-   <!-- 
-                            <
-                </div>
-                <div class="stats-nav" id="html-stats">
-                    <h3 id="html-button">HTML</h3>
-                    <div class="slider-box" id="html-slider-box">
-                        <div class="slider" id="html-slider">
-                            <h4 class="slider-text">100%</h4>
-                        </div>
-                        <div class="stat-text">
-                            <p>Taught through FreeCodeCamp</p>
-                            <ul>
-                                Currently working on:
-                                <li><s>Basic HTML and HTML5</s></li>                    
-                            </ul>
-                        </div>
-                    </div>
-            
-                </div>
-                <div class="stats-nav" id="css-stats">
-                        <h3 id="css-button">CSS</h3>
-                        <div class="slider-box" id="css-slider-box">
-                            <div class="slider" id="css-slider">
-                                <h4 class="slider-text">50%</h4>
-                            </div>
-                            <div class="stat-text">
-                                <p>Taught through FreeCodeCamp</p>
-                                <ul>
-                                    Currently working on:
-                                    <li><s>Basic CSS</s></li>
-                                    <li><s>Applied Visual Design</s></li>
-                                    <li>Applied Accessability</li>
-                                    <li>Responsive Web Design Principles</li>
-                                    <li>CSS Flexbox</li>
-                                    <li>CSS Grid</li>
-                                    <li>Responsive Web Design Projects</li>
-                                </ul>
-                            </div>
-            
-                        </div>       
-                </div>
-            
-                <div class="stats-nav" id="js-stats">
-                    <h3 id="js-button">Javascript</h3>
-                    <div class="slider-box" id="js-slider-box">
-                        <div class="slider" id="js-slider">
-                            <h4 class="slider-text">25%</h4>
-                        </div>
-                        <div class="stat-text">
-                            <p>Taught through FreeCodeCamp</p>
-                            <ul>
-                                Currently working on:
-                                <li><s>Data Structures</s></li>
-                                <li><s>Recursion</s></li>
-                                <li><s>Value and Reference</s></li>
-                                <li>Object-Oriented Programming</li>
-                                
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-    </div> -->
-
-        <!-- <div class="page">
-           
-
-            <h3>Web Projects</h3>
-                <div class="outerBox">
-                  <div class="innerBox">
-                    <h4 class="insideHeading">RPG Spaceship Generator</h4>
-                        <div class="insideTextBox">
-                            <p><a href="https://github.com/jcweston/Spaceship-Website">GitHub</a></p>
-                        <ul>
-                            <li>
-                                For use with Science-Fiction Roleplaying Game systems, a generator for custom spaceships.
-                            </li>
-                            <li>
-                                Intended as a resource for Games Masters, the Spaceship Generator quickly and easily builds a profile and presents it in a blueprint format, ready for use in a game.
-                            </li>
-                        </ul>
-                        </div>
-                    </div>
-                   
-                </div>
-        
-
-</div> -->
-
-
-
-        
-        <!-- <p>
-          Icons downloaded from <a href="//fontawesome.com/license">fontawesome</a>  
-        </p>
-       <p>James Weston 2020</p> -->
     </body>
 
 </html>
