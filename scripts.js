@@ -1,11 +1,11 @@
 function buttonHandler(box, button, isClicked) {
     clickObj[isClicked] =! clickObj[isClicked]
-    box.setAttribute('class','visible , box')
+    box.setAttribute('class','visible , box , boxColour')
     if (clickObj[isClicked]==true){
         button.setAttribute('class','sidebar-button , sidebar-button-clicked')
     } else {
         button.setAttribute('class','sidebar-button')
-        box.setAttribute('class','hidden , box')
+        box.setAttribute('class','hidden , box , boxColour')
     }
 }
 
@@ -18,7 +18,8 @@ const clickObj = {
     'picturesClicked':false,
     'projectsClicked':false,
     'contactClicked':false,
-    'studiesClicked':false
+    'studiesClicked':false,
+    'attrClicked':false
 
 }
 const aboutButton = document.getElementById('about-button')
@@ -49,6 +50,12 @@ const studiesButton = document.getElementById('studies-button')
 const studiesBox = document.getElementById('studies-box')
 studiesButton.addEventListener('click', () => {
     return buttonHandler(studiesBox, studiesButton, "studiesClicked")}
+)
+
+const attrButton = document.getElementById('attributions-button')
+const attrBox = document.getElementById('attributions-box')
+attrButton.addEventListener('click', () => {
+    return buttonHandler(attrBox, attrButton, "attrClicked")}
 )
 
 const jsProgress = document.getElementById('JS-progress').textContent

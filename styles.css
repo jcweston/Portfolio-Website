@@ -1,21 +1,83 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color:lightgray;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.topbarColour {
+    background-color: #05386B;
+}
+
+.backgroundColour {
+    background-color: #8ee4Af;
+    
+}
+
+.sidebarColour {
+    background-color: #379683;
+}
+
+.headerColour {
+    background-color: #05386B;
+}
+
+.boxColour {
+    background-color: #5cdb95;
+}
+
 .topBar {
-    background-color: lightseagreen;
     width: 98%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     border-radius:5px;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 5px;
-    box-shadow: 0px -30px 0 0 lightgrey;
+    box-shadow: 0px -30px 0 0  #8ee4Af;
+}
+
+.box {
+    order: 0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.sidebar {
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    padding-left: 10px;
+    margin-top: 20px;
+    width: 15%;
+    height: 100%;
+}
+
+.sidebar-button {
+    margin: 10px;
+    margin-left: 10px;
+    width: 100%;
+    min-width: 100px;
+    box-shadow:0 0 0 6px  #8ee4Af;
+    border-radius: 2px;
+    background-color:  #8ee4Af;
+    z-index: 2;
+}
+
+h2, h3 {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    color: #edf5e1;
+    border-radius:2px;
+    border-top-left-radius: 2px;
+    margin: auto;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 20px;
+    
+}
+
+.button {
+    height: 5px;
 }
 
 .main-page {
@@ -33,14 +95,11 @@ body {
     margin-top: 20px
 }
 
-.box {
-    background-color: lavender;
-    order: 0;
-    border-radius: 5px;
-}
+
 
 .textbox {
     padding-left: 5px;
+    
 }
 
 .hidden {
@@ -98,27 +157,7 @@ body {
     flex-wrap: wrap;
 }
 
-.sidebar {
-    display: flex;
-    background-color: ivory;
-    border-radius: 5px;
-    flex-direction: column;
-    padding-left: 10px;
-    margin-top: 20px;
-    width: 15%;
-    height: 100%;
-}
 
-.sidebar-button {
-    margin: 10px;
-    margin-left: 10px;
-    width: 100%;
-    min-width: 100px;
-    box-shadow:0 0 0 6px lightgrey;
-    border-radius: 2px;
-    background-color: lightgray;
-    z-index: 2;
-}
 
 .sidebar-button-clicked {
     padding-left: 20%;
@@ -128,66 +167,26 @@ body {
 h1 {
     padding: 10px;
     margin: 0;
-    color: black;
+    color: #edf5e1;
+    text-decoration: none;
 }
 
-.navigation {
-    text-align: center;
-    align-items: center;
-    border-radius: 5px;
-    width: 200px;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 3px;
-    font-family: 'Franklin Gothic Medium', sans-serif;
+.outside-links {
+    width: 100px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
-h2, h3 {
-    font-family: 'Franklin Gothic Medium', sans-serif;
-    box-shadow:0 0 0 6px lightgrey;
-    border-radius:2px;
-    border-top-left-radius: 2px;
-    background-color: cadetblue;
-    margin: auto;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-top: 5px;
-    padding-right: 20px;
-    
-}
+
 .picture {
     max-height: 50%;
     margin: 10px;
     border-radius:5px;
-    border: cadetblue solid 4px;
+    
 }
-
-.buttonText {
-    position: relative;
-    bottom: 25px;
-    height: 50px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-
-.button .buttonText {
-    visibility: hidden;
-    text-align: center;
-  }
-  
-.button:hover .buttonText {
-    visibility: visible;
-  }
-
-.buttonText:hover .button {
-    visibility: hidden
-}
-
-.button:hover {
-      visibility: hidden;
-  }
 
 .icon {
     height: 30px;
