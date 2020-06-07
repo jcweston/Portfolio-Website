@@ -7,9 +7,10 @@
     width: 40%;
 }
 
-/* .list {
-    background-color: paleturquoise;
-} */
+.to-do-header {
+    color: black;
+}
+
 
 .strike{
     text-decoration: line-through;
